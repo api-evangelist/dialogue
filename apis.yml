@@ -1,8 +1,26 @@
 aid: dialogue
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/dialogue.png
 name: Dialogue
-description: 'Dialogue is a company surfaced as a portfolio company of hv-capital and added to the API
-  Evangelist network as a stub for enrichment. Sector: healthcare; consumer. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Dialogue is a leading Canadian virtual healthcare and employee wellness
+  provider operating an Integrated Health Platform that delivers primary care, mental
+  health support, Employee Assistance Programs (EAP), and wellness programming to members
+  through a single mobile and web application available 24/7/365. The company serves
+  more than 52,000 Canadian organizations — including Sun Life, National Bank of Canada,
+  Via Rail, Lightspeed, and Samsung — connecting employees and their families with
+  multidisciplinary care teams of nurses, physicians, and mental health specialists.
+  Dialogue is a consumer-facing digital health application; it does not currently publish
+  a public developer API or OpenAPI surface.'
 url: https://raw.githubusercontent.com/api-evangelist/dialogue/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +30,44 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-- Healthcare; Consumer
+- Healthcare
+- Telemedicine
+- Virtual Care
+- Mental Health
+- Employee Assistance Program
+- Wellness
+- Consumer
+- Canada
 apis: []
+common:
+- type: DomainSecurity
+  url: security/dialogue-domain-security.yml
+- type: Website
+  url: https://www.dialogue.co/en
+- type: Pricing
+  url: https://www.dialogue.co/en/pricing
+- type: Blog
+  url: https://www.dialogue.co/en/blog
+- type: PrivacyPolicy
+  url: https://www.dialogue.co/en/privacy
+- type: TermsOfService
+  url: https://www.dialogue.co/en/terms
+- type: Support
+  url: https://help.dialogue.co/hc/en-ca
+- type: StatusPage
+  url: https://status.dialogue.co/
+- type: Login
+  url: https://app.dialogue.co/?lng=en
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
